@@ -1,45 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 nav {
     background-color: steelblue;
     padding: 10px;
   }
+
   nav a {
     color: white;
     display: block;
     padding: 20px;
   }
+
   h1 {
     color: steelblue;
+    padding: .5rem;
   }
+
+  main {
+    max-width: 1000px;
+  }
+
   img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
+    /* width: 150px;
+    height: auto; */
+    float: right;
+    border: 3px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
   }
+
   p {
-    padding: 0;
+    padding: 10px;
   }
+
   aside {
+    position: relative;
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba instead of hex here? */
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
     text-align: center;
   }
 
+  aside img {
+    width: 200px;
+    height: auto;
+    border: 3px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+
+  aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+
+  footer {
+    margin-top: 1em;
+    border-top: 1px black;
+    text-align: center;
+  }
+
+  /* Class Selectors */
+
+  .box {
+    margin: 1rem;
+    border: 3px solid rgba(114, 109, 109, 0.2);
+    padding: 1rem;
+    background-color: lightblue;
+    color: black
+  }
+  
+  aside h2 {
+    position: absolute;
+    top: -5px;
+    left: 175px;
+  }
